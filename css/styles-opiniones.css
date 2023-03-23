@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    border: 2px solid;
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas:
+        "caja1 caja1 caja2 caja3"
+        "caja1 caja1 caja4 caja5";
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+    background-color: white;
+}
+.caja {
+    border: 1px solid;
+    display: grid;
+    place-items: center;
+}
+.caja:hover {
+    background: #C7453B;
+}
+.caja1 {
+    grid-area: caja1;
+    background-color: #FA574B;
+}
+.caja2 {
+    grid-area: caja2;
+    background-color: #C7453B;
+}
+.caja3 {
+    grid-area: caja3;
+    background-color: #FB9D96;
+}
+.caja4 {
+    grid-area: caja4;
+    background-color: #FB9D96;
+}
+.caja5 {
+    grid-area: caja5;
+    background-color: #C7453B;
+}
+.contenedor div{
+    display: grid;
+    place-items: center;
+}
+.imagenopinion{
+    object-fit: cover;
+    display: block;
+}
+.contenedor-opiniones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+}
+.opinion{
+    background-color: #C7453B;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+.contenedor-opiniones div{
+    display: grid;
+    place-items: center;
+}
+.contenedor-opiniones img{
+    object-fit: cover;
+    height: 300px;
+}
+
+@media screen and (max-width: 480px) {
+/* index */
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .contenedor > * {
+        flex: 1;
+    }
+    .logo2 {
+        height: auto;
+        width: 200px;
+    }
+    /*Footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .footer > * {
+        flex: 1;
+    }
+    .footer1{
+        padding: 10px;
+    }
+    .footer2{
+        padding: 10px;
+    }
+    .footer3{
+        padding: 10px;
+    }
+}

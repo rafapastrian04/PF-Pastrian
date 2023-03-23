@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/img/Mi proyecto.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-opiniones.css">
+</head>
+<body class="fondo">
+    <header>
+        <nav class="bg navegador">
+            <ul>
+                <img src="../multimedia/img/logo.png" alt="logo" class="logo">
+                <li><a href="../index.html" class="subtitulos1">Inicio</a></li>
+                <li><a href="../pages/productos.html" class="subtitulos2">Productos</a></li>
+                <li><a href="../pages/opiniones.html" class="subtitulos3">Opiniones</a></li>
+                <li><a href="../pages/sobre-nosotros.html" class="subtitulos4">Sobre nosotros</a></li>
+                <li><a href="../pages/contactos.html" class="subtitulos5">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="portada">
+            <img src="/multimedia/img/gym1.jpg" alt="imagen de suplementos">
+            <div class="contenido">
+                <h1>Los suplementos deportivos pueden mejorar el rendimiento, aumentar la fuerza y la resistencia, y acelerar la recuperación después del ejercicio.</h1>
+                <p>En NutriTech vas a encontrar los mejores productos, únicamente de marcas con reconocimiento Internacional.</p>
+                <button>Ver más</button>
+            </div>
+        </div>
+</header>
+    <main class="subtitulo">
+        <form action="" method="post" class="formulario">
+            <div class="form">  
+                <h3>Formulario de contacto:</h3>
+            </div>
+            <div class="form2">
+                <label  class="nombre">Nombre:
+                    <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+                </label>
+                <label class="apellido">Apellido:
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </label>
+                <label class="edad">Edad:
+                    <input type="number" name="edad" placeholder="Edad" required>
+                </label>
+                <label class="correo">Correo electrónico
+                    <input type="email" name="mail" placeholder="Mail" required>
+                </label>
+                <label class="motivo">Motivo de su consulta:
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese aquí el motivo" required class="textarea"></textarea>
+                </label>
+                <div class="sexo">
+                    <legend>Sexo:</legend>
+                    <label>Hombre
+                        <input type="radio" name="Género" value="hombre">
+                    </label>
+                    <label>Mujer
+                        <input type="radio" name="Género" value="mujer">
+                    </label>
+                    <label>No binario
+                        <input type="radio" name="Género" value="nobinario" checked>
+                    </label>
+                </div>
+                <label class="terminos">Acepto términos y condiciones
+                    <input type="checkbox" name="acepto" value="si" required>
+                </label>
+                    <input type="reset" value="Reset" class="botones">
+                    <input type="submit" value="Enviar" class="botones2">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <h3 class="footer1">NutriTech, todos los derechos reservados.</h3>
+            <h3 class="footer2">Donde encontrarnos</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.483983593603!2d-58.3704081842352!3d-34.66773256839614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccceccdd8d455%3A0xe771f022c22a954b!2sEstadio%20Presidente%20Per%C3%B3n!5e0!3m2!1ses!2sar!4v1676382940632!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+                <h3 class="footer3">Nuestras Redes</h3>
+            <div class="imagenes-footer">
+                <a href="https://www.facebook.com/"><img src="../multimedia/img/Redes/facebook.png" alt="" class="imagenfooter"></a>
+                <a href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/img/Redes/instagram.jpg" alt="" class="imagenfooter"></a>
+                <a href="https://twitter.com/home"><img src="../multimedia/img/Redes/twitter.png" alt="" class="imagenfooter"></a>
+                <a href="https://web.whatsapp.com/"><img src="../multimedia/img/Redes/whatsapp.png" alt="" class="imagenfooter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
