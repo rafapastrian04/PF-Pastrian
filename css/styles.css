@@ -3,13 +3,34 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 *::selection {
     background-color: #7A2A25;
     color: white;
 }
+.correccion{
+    overflow-y: hidden;
+}
+.subtitulos{
+    margin: 10px;
+}
+.subtitulo{
+    color: black;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: solid;
+}
 .bg{
     background-color: #FA574B;
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+}
+.bg ul li a:hover{
+    background: #FB9D96;
+    transition: all 1s;
 }
 nav ul{
     list-style: none;
@@ -29,50 +50,19 @@ nav ul{
     font-family: 'IBM Plex Sans', sans-serif;
     text-decoration: solid;
 }
-.subtitulos{
-    margin: 10px;
-}
-.subtitulo{
-    color: black;
-    font-size: 26px;
-    text-align: center;
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-decoration: solid;
-}
-.navegador{
-    font-size: 18px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 900;
-    /*
-    display: flex;
-    justify-content: end; /* estas 2 ultimas lineas sirven para alinear el texto al centro */
-}
-.navegador ul li a:hover {
-    background: #FB9D96;
-    transition: all 1s;
-}
-.navegador ul{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-       "logo subtitulos1 subtitulos2 subtitulos3 subtitulos4 subtitulos5";
-    justify-content: space-around;
-    align-items: center;
-}
-.navegador ul li a{
-    display: block;
-    text-decoration: none;
-    padding: 20px 10px;
-}
 /*portada*/
 .portada{
     position: relative;
+    overflow-y: hidden;
 }
 .portada img{
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
+    overflow-x: hidden;
+}
+.portada h1{
+    overflow-y: hidden;
 }
 .portada .contenido{
     position: absolute;
@@ -199,7 +189,8 @@ nav ul{
 }
 /* Footer */
 .footer{
-    background-color: white;
+    background-color: black;
+    color: white;
     font-size: 14px;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -248,3 +239,157 @@ nav ul{
     display: grid;
     gap: 10px;
 }
+
+.contenedor {
+    border: 2px solid;
+     width: 100%;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas:
+        "caja1 caja1 caja2 caja3"
+        "caja1 caja1 caja4 caja5";
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+    background-color: white;
+}
+.logo2:hover{
+    height: auto;
+    height: 300px;
+}
+.caja {
+    border: 1px solid;
+    display: grid;
+    place-items: center;
+}
+.caja:hover {
+    background: #C7453B;
+}
+.caja1 {
+    grid-area: caja1;
+    background-color: #FA574B;
+}
+.caja2 {
+    grid-area: caja2;
+    background-color: #C7453B;
+}
+.caja3 {
+    grid-area: caja3;
+    background-color: #FB9D96;
+}
+.caja4 {
+    grid-area: caja4;
+    background-color: #FB9D96;
+}
+.caja5 {
+    grid-area: caja5;
+    background-color: #C7453B;
+}
+.contenedor div{
+    display: grid;
+    place-items: center;
+}
+.imagenopinion{
+    object-fit: cover;
+    display: block;
+}
+.contenedor-opiniones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+}
+.opinion{
+    background-color: #C7453B;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+.contenedor-opiniones div{
+    display: grid;
+    place-items: center;
+}
+.contenedor-opiniones img{
+    object-fit: cover;
+    height: 300px;
+}
+
+@media screen and (max-width: 480px) {
+/* index */
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .contenedor > * {
+        flex: 1;
+    }
+    .logo2 {
+        height: auto;
+        width: 300px;
+    }
+    /*Footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .footer > * {
+        flex: 1;
+    }
+    .footer1{
+        padding: 10px;
+    }
+    .footer2{
+        padding: 10px;
+    }
+    .footer3{
+        padding: 10px;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-opiniones{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .opinion img{
+        width: auto;
+        height: 120px;
+    }
+    .portada{
+        display: flex;
+        flex-direction: column;
+    }
+    .portada img{
+        height: 450px;
+        width: auto;
+        display: block;
+    }
+}
+/*GIT
+📝 Comandos más utilizados para tener a mano:
+git init → Inicializar repositorio
+git add . → Agregar archivos a staging area / lista de espera
+git commit -m "comentario" → Crear una nueva versión de nuestro proyecto
+git status → Ver el estado de nuestro repositorio y sus archivos
+git branch → Ver nuestras ramas y la rama en la que estamos
+git checkout -b nombre-de-la-rama → Crear una nueva rama
+git checkout nombre-de-la-rama → Movernos hacia una rama
+git merge nombre-de-la-rama → Traer los cambios de una rama
+*/

@@ -6,22 +6,39 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/img/Mi proyecto.png" type="image/x-icon">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles-opiniones.css">
 </head>
 <body class="fondo">
     <header>
-        <nav class="bg navegador">
-            <ul>
+        <nav class="navbar navbar-expand-lg bg">
+            <div class="container-fluid">
                 <img src="../multimedia/img/logo.png" alt="logo" class="logo">
-                <li><a href="../index.html" class="subtitulos1">Inicio</a></li>
-                <li><a href="../pages/productos.html" class="subtitulos2">Productos</a></li>
-                <li><a href="../pages/opiniones.html" class="subtitulos3">Opiniones</a></li>
-                <li><a href="../pages/sobre-nosotros.html" class="subtitulos4">Sobre nosotros</a></li>
-                <li><a href="../pages/contactos.html" class="subtitulos5">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="portada">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/opiniones.html">Opiniones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="portada">
             <img src="/multimedia/img/gym1.jpg" alt="imagen de suplementos">
             <div class="contenido">
                 <h1>Los suplementos deportivos pueden mejorar el rendimiento, aumentar la fuerza y la resistencia, y acelerar la recuperación después del ejercicio.</h1>
@@ -29,34 +46,35 @@
                 <button>Ver más</button>
             </div>
         </div>
-</header>
+    </header>
     <main class="sobre-nosotros">
-        <h1 class="titulo">Sobre nosotros</h1>
+        <h1 class="titulo correccion">Sobre nosotros</h1>
         <div>
-            <h3>¿Quienes somos?</h3>
+            <h3 class="correccion">¿Quienes somos?</h3>
             <p>Somos una compañía de nutrición, salud y bienestar dedicada a la elaboración, distribución y venta de una amplia gama de productos nutricionales y de la salud.
                 Buscamos la excelencia en todo lo que fabricamos, tratando de lograr los suplementos de más alto nivel y eficacia, bajo estrictos estándares de calidad, sanidad y bioseguridad. Fundamentalmente, nos orientamos en la calidad de los productos, en la excelencia de la materia prima y el profesionalismo de nuestra gente.
                 Ofrecemos la línea más completa de suplementos deportivos para mejorar el rendimiento, la recuperación y la nutrición. El objetivo de las mismas está dirigido a poder acompañar todos los niveles de entrenamiento de los diferentes consumidores, sin importar la actividad deportiva, el tipo de entrenamiento, la intensidad o la frecuencia con la que lo realizan.
                 Nuestra misión, es apoyar el crecimiento de los atletas en todas las etapas de su vida deportiva y cualesquiera sean sus objetivos.</p>
         </div>
         <div>
-            <h3>Calidad</h3>
+            <h3 class="correccion">Calidad</h3>
             <p>En ENA SPORT nos tomamos la calidad de los productos muy en serio, y para asegurarnos de que recibas lo mejor siempre, cada etapa del proceso sigue los estándares más altos:
                 La materia prima de nuestras proteínas, son de ARLA FOODS INGREDIENTS, líder mundial en venta y producción de la misma. Su calidad está certificada por ISO9001 e instalaciones registradas en la FDA, para brindar seguridad al consumidor.
                 Mantenemos acuerdos estratégicos con proveedores de largo plazo para poder contar con los últimos desarrollos en materias primas del mundo.
                 Nuestro equipo interno de control supervisa la calidad de todos los procesos de producción. Cada producto que hacemos está grabado con un código de seguimiento único para lograr la trazabilidad desde la recepción de las materias primas en nuestra planta hasta que llega al consumidor final.</p>
         </div>
         <div>
-            <h3>Desarrollo</h3>
+            <h3 class="correccion">Desarrollo</h3>
             <p>Constantemente trabajamos para potenciar nuestros equipos de trabajo, reinvertir, emprender y desarrollar nuevos productos o mejorar los existentes, en búsqueda de la excelencia para acompañar al consumidor de la mejor forma.</p>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     </main>
     <footer>
         <div class="footer">
-            <h3 class="footer1">NutriTech, todos los derechos reservados.</h3>
-            <h3 class="footer2">Donde encontrarnos</h3>
+            <h3 class="footer1 correccion">NutriTech, todos los derechos reservados.</h3>
+            <h3 class="footer2 correccion">Donde encontrarnos</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.483983593603!2d-58.3704081842352!3d-34.66773256839614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccceccdd8d455%3A0xe771f022c22a954b!2sEstadio%20Presidente%20Per%C3%B3n!5e0!3m2!1ses!2sar!4v1676382940632!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                <h3 class="footer3">Nuestras Redes</h3>
+                <h3 class="footer3 correccion">Nuestras Redes</h3>
             <div class="imagenes-footer">
                 <a href="https://www.facebook.com/"><img src="../multimedia/img/Redes/facebook.png" alt="" class="imagenfooter"></a>
                 <a href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/img/Redes/instagram.jpg" alt="" class="imagenfooter"></a>

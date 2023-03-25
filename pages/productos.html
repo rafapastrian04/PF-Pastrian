@@ -6,21 +6,38 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" href="../multimedia/img/Mi proyecto.png" type="image/x-icon">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles-opiniones.css">
 </head>
 <body class="fondo">
     <header>
-        <nav class="bg navegador">
-            <ul>
+        <nav class="navbar navbar-expand-lg bg">
+            <div class="container-fluid">
                 <img src="../multimedia/img/logo.png" alt="logo" class="logo">
-                <li><a href="../index.html" class="subtitulos1">Inicio</a></li>
-                <li><a href="../pages/productos.html" class="subtitulos2">Productos</a></li>
-                <li><a href="../pages/opiniones.html" class="subtitulos3">Opiniones</a></li>
-                <li><a href="../pages/sobre-nosotros.html" class="subtitulos4">Sobre nosotros</a></li>
-                <li><a href="../pages/contactos.html" class="subtitulos5">Contacto</a></li>
-            </ul>
-        </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/opiniones.html">Opiniones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="portada">
             <img src="/multimedia/img/gym1.jpg" alt="imagen de suplementos">
             <div class="contenido">
@@ -31,14 +48,14 @@
         </div>
 </header>
     <main>
-        <h2 class="titulo-productos">Productos destacados</h2>
+        <h2 class="titulo-productos correccion">Productos destacados</h2>
         <div class="contenedor-tarjetas-destacadas">
             <div class="tarjeta-destacada">
                 <div class="imagen-producto">
                     <img src="/multimedia/img/productos/proteina.jpg" alt="Proteína en polvo">
                 </div>
                 <div class="contenido">
-                    <h4>Proteina</h4>
+                    <h4 class="correccion">Proteina</h4>
                     <p>Se utiliza comúnmente como suplemento proteico. La proteína de suero puede mejorar el contenido de nutrientes de la dieta y también tener efectos sobre el sistema inmunológico.</p>
                     <button>Ver más</button>
                 </div>
@@ -48,7 +65,7 @@
                     <img src="/multimedia/img/productos/creatina.jpg" alt="Proteína en polvo">
                 </div>
                 <div class="contenido">
-                    <h4>Creatina</h4>
+                    <h class="correccion"4>Creatina</h4>
                     <p>Las personas comúnmente usan creatina para mejorar el rendimiento del ejercicio y aumentar la masa muscular.</p>
                     <button>Ver más</button>
                 </div>
@@ -58,7 +75,7 @@
                     <img src="/multimedia/img/productos/pre.jpg" alt="Proteína en polvo">
                 </div>
                 <div class="contenido">
-                    <h4>Pre-entreno</h4>
+                    <h4 class="correccion">Pre-entreno</h4>
                     <p>Los pre-workout suelen ser mezclas de estimulantes como la cafeína, con otros ingredientes del mundo de la suplementación deportiva como la creatina o la beta alanina, con el objetivo de aumentar el rendimiento y retrasar la fatiga.</p>
                     <button>Ver más</button>
                 </div>
@@ -68,7 +85,7 @@
                     <img src="/multimedia/img/productos/fat-burner.jpg" alt="Proteína en polvo">
                 </div>
                 <div class="contenido">
-                    <h4>Fat-burner</h4>
+                    <h4 class="correccion">Fat-burner</h4>
                     <p>Puede mejorar la salud cardiovascular y reducir el riesgo de complicaciones relacionadas con la obesidad.</p>
                     <button>Ver más</button>
                 </div>
@@ -78,7 +95,7 @@
                     <img src="/multimedia/img/productos/bcaa.jpg" alt="Proteína en polvo">
                 </div>
                 <div class="contenido">
-                    <h4>BCAA</h4>
+                    <h4 class="correccion">BCAA</h4>
                     <p>Los BCAA favorecen el aumento de masa muscular estimulando la secreción de insulina, una hormona fundamental en la formación de nuevo tejido muscular.</p>
                     <button>Ver más</button>
                 </div>
@@ -88,28 +105,26 @@
                     <img src="/multimedia/img/productos/beta.jpg" alt="Proteína en polvo">
                 </div>
                 <div class="contenido">
-                    <h4>Beta-alanina</h4>
+                    <h4 class="correccion">Beta-alanina</h4>
                     <p>Según los expertos, la beta-alanina mejora el rendimiento atlético reduciendo la fatiga, aumentando la resistencia y potenciando el rendimiento en los ejercicios de alta intensidad.</p>
                     <button>Ver más</button>
                 </div>
             </div>
         </div>
-            <h2 class="subtitulo">Información relevante</h2>
+            <h2 class="subtitulo correccion">Información relevante</h2>
         <div class="videos">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/CvuBlqfTW5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/sHCEM7YDdBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/N8QZ6rCQmzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <aside>
-
-        </aside>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     </main>
     <footer>
         <div class="footer">
-            <h3 class="footer1">NutriTech, todos los derechos reservados.</h3>
-            <h3 class="footer2">Donde encontrarnos</h3>
+            <h3 class="footer1 correccion">NutriTech, todos los derechos reservados.</h3>
+            <h3 class="footer2 correccion">Donde encontrarnos</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.483983593603!2d-58.3704081842352!3d-34.66773256839614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccceccdd8d455%3A0xe771f022c22a954b!2sEstadio%20Presidente%20Per%C3%B3n!5e0!3m2!1ses!2sar!4v1676382940632!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                <h3 class="footer3">Nuestras Redes</h3>
+                <h3 class="footer3 correccion">Nuestras Redes</h3>
             <div class="imagenes-footer">
                 <a href="https://www.facebook.com/"><img src="../multimedia/img/Redes/facebook.png" alt="" class="imagenfooter"></a>
                 <a href="https://www.instagram.com/?hl=es-la"><img src="../multimedia/img/Redes/instagram.jpg" alt="" class="imagenfooter"></a>
