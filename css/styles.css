@@ -392,4 +392,5 @@ git branch → Ver nuestras ramas y la rama en la que estamos
 git checkout -b nombre-de-la-rama → Crear una nueva rama
 git checkout nombre-de-la-rama → Movernos hacia una rama
 git merge nombre-de-la-rama → Traer los cambios de una rama
+git push SUBIR ARCHIVOS A GITHUB
 */
