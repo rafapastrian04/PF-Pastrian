@@ -79,6 +79,13 @@ nav ul{
 }
 /*Fin portada*/
 /*Productos*/
+.boton {
+    display: grid;
+    align-items: center;
+    font-size: 16px;
+    overflow-y: hidden;
+    color: white
+}
 .titulo-destacados{
     margin: 10px;
 }
