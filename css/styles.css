@@ -321,9 +321,62 @@ nav ul{
 .contenedor-opiniones img{
     object-fit: cover;
     height: 300px;
+} 
+@media screen and (max-width:992px) {
+    /* la flechita hace referencia a todos los hijos directos */
+    .contenedor > * {
+        flex: 1;
+    }
+    .logo2 {
+        height: auto;
+        width: 300px;
+    }
+    /*Footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .footer > * {
+        flex: 1;
+    }
+    .footer1{
+        padding: 10px;
+    }
+    .footer2{
+        padding: 10px;
+    }
+    .footer3{
+        padding: 10px;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-opiniones{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .opinion img{
+        width: auto;
+        height: 400px;
+    }
+    .portada{
+        display: flex;
+        flex-direction: column;
+    }
+    .portada img{
+        height: 450px;
+        width: auto;
+        display: block;
+    }
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width:576px) {
 /* index */
     .contenedor {
         display: flex;
@@ -370,7 +423,7 @@ nav ul{
     }
     .opinion img{
         width: auto;
-        height: 120px;
+        height: 200px;
     }
     .portada{
         display: flex;
