@@ -1,0 +1,20 @@
+.titulo-opinion {
+    font-size: 30px;
+    font-weight: 900;
+}
+.contenedor-opiniones{
+        background-color: $mainColor;
+        padding: 10px;
+
+    .div{
+        margin-bottom: 10px;
+    }
+}
+.contenedor-opiniones img{
+    object-fit: cover;
+    height: 300px;
+}    
+
+.titulo{
+    font-size: 90px;
+}

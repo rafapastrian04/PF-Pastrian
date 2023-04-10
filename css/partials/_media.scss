@@ -1,0 +1,125 @@
+@media screen and (max-width:992px) {
+    /* la flechita hace referencia a todos los hijos directos */
+    .contenedor > * {
+        flex: 1;
+    }
+    .logo2 {
+        height: auto;
+        width: 300px;
+    }
+    /*Footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .footer > * {
+        flex: 1;
+    }
+    .footer1{
+        padding: 10px;
+    }
+    .footer2{
+        padding: 10px;
+    }
+    .footer3{
+        padding: 10px;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-opiniones{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .opinion img{
+        width: auto;
+        height: 400px;
+    }
+    .portada{
+        display: flex;
+        flex-direction: column;
+    }
+    .portada img{
+        height: 450px;
+        width: auto;
+        display: block;
+    }
+}
+@media screen and (max-width:576px) {
+/* index */
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .contenedor > * {
+        flex: 1;
+    }
+    .logo2 {
+        height: auto;
+        width: 300px;
+    }
+    /*Footer*/
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    /* la flechita hace referencia a todos los hijos directos */
+    .footer > * {
+        flex: 1;
+    }
+    .footer1{
+        padding: 10px;
+    }
+    .footer2{
+        padding: 10px;
+    }
+    .footer3{
+        padding: 10px;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-opiniones{
+        display: flex;
+        flex-direction: column;
+    }
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .opinion img{
+        width: auto;
+        height: 200px;
+    }
+    .portada{
+        display: flex;
+        flex-direction: column;
+    }
+    .portada img{
+        height: 450px;
+        width: auto;
+        display: block;
+    }
+}
+/*GIT
+📝 Comandos más utilizados para tener a mano:
+git init → Inicializar repositorio
+git add . → Agregar archivos a staging area / lista de espera
+git commit -m "comentario" → Crear una nueva versión de nuestro proyecto
+git status → Ver el estado de nuestro repositorio y sus archivos
+git branch → Ver nuestras ramas y la rama en la que estamos
+git checkout -b nombre-de-la-rama → Crear una nueva rama
+git checkout nombre-de-la-rama → Movernos hacia una rama
+git merge nombre-de-la-rama → Traer los cambios de una rama
+git push SUBIR ARCHIVOS A GITHUB
+*/
