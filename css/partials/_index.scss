@@ -18,7 +18,6 @@
     background-color: white;
 }
 .logo2:hover{
-    height: auto;
     height: 300px;
 }
 .caja {
@@ -50,4 +49,13 @@
 .caja5 {
     grid-area: caja5;
     background-color: $mainColor;
+}
+
+@mixin tamanos{$ancho, $alto} {
+    width: $ancho;
+    height: $alto;
+}
+
+.logo2{
+    @include tamanos{auto, 250px}
 }
