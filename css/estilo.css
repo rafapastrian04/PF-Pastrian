@@ -1,0 +1,454 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap");
+* { /*el asterisco sirve para resetear lo que viene predeterminado en el navegador */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+*::selection {
+  background-color: #7A2A25;
+  color: white;
+}
+
+.fondo {
+  background-color: white;
+}
+
+.contenedor {
+  border: 2px solid;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "caja1 caja1 caja2 caja3" "caja1 caja1 caja4 caja5";
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  color: black;
+  background-color: white;
+}
+
+.logo2:hover {
+  height: 300px;
+}
+
+.caja {
+  border: 1px solid;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+.caja:hover {
+  background: #FA574B;
+}
+
+.caja1 {
+  grid-area: caja1;
+  background-color: #7A2A25;
+}
+
+.caja2 {
+  grid-area: caja2;
+  background-color: #7A2A25;
+}
+
+.caja3 {
+  grid-area: caja3;
+  background-color: #7A2A25;
+}
+
+.caja4 {
+  grid-area: caja4;
+  background-color: #7A2A25;
+}
+
+.caja5 {
+  grid-area: caja5;
+  background-color: #7A2A25;
+}
+
+.logo2 {
+  width: auto;
+  height: 250px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.correccion {
+  overflow-y: hidden;
+}
+
+.subtitulo {
+  margin: 10px;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500px;
+}
+
+.bg {
+  background-color: #FA574B;
+  font-size: 18px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+}
+
+.bg ul li a:hover {
+  background: #FB9D96;
+  transition: all 1s;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.bg ul li a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+
+.fondo {
+  background-color: white;
+}
+
+.titulo {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-decoration: solid;
+}
+
+/*portada*/
+.portada {
+  position: relative;
+  overflow-y: hidden;
+}
+.portada .contenido {
+  position: absolute;
+  max-width: 800px;
+  top: 30px;
+  left: 1rem;
+  right: 1rem;
+  color: white;
+  background-color: rgba(122, 43, 37, 0.7058823529);
+}
+
+.portada h1 {
+  overflow-y: hidden;
+}
+
+.portada img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.portada button {
+  padding: 5px 20px;
+  border: none;
+  margin: 10px;
+  background-color: #7A2A25;
+  border-radius: 5px;
+}
+
+.boton {
+  display: grid;
+  align-items: center;
+  font-size: 16px;
+  overflow-y: hidden;
+  color: white;
+}
+
+.titulo-destacados {
+  margin: 10px;
+}
+
+.contenedor-tarjetas-destacadas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: black;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 20px;
+  max-width: 1800px;
+}
+.contenedor-tarjetas-destacadas .imagen-producto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-tarjetas-destacadas .tarjeta-destacada {
+  height: 550px;
+  width: 550px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.contenedor-tarjetas-destacadas .tarjeta-destacada .contenido {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.contenedor-tarjetas-destacadas .tarjeta-destacada .contenido .p {
+  background-color: rgba(122, 42, 37, 0.5960784314);
+}
+.contenedor-tarjetas-destacadas .tarjeta-destacada .contenido .h1 {
+  background-color: rgba(122, 42, 37, 0.5960784314);
+}
+.contenedor-tarjetas-destacadas .tarjeta-destacada .contenido h3 {
+  font-weight: 900px;
+  font-size: 25px;
+}
+
+.contenedor-tarjetas-destacadas button {
+  width: 100px;
+  padding: 5px 20px;
+  border: none;
+  margin: 10px;
+  background-color: #7A2A25;
+  border-radius: 5px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  max-width: 1800px;
+}
+
+.sobre-nosotros {
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  text-decoration: solid;
+  padding: 15px;
+  display: grid;
+  gap: 10px;
+}
+.sobre-nosotros h3 {
+  font-weight: 800;
+  font-size: 25;
+}
+
+.articulo {
+  transition: 1s;
+}
+
+.articulo:hover {
+  color: black;
+  background-color: rgba(122, 43, 37, 0.368627451);
+  font-size: 25px;
+}
+
+.titulo-opinion {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.contenedor-opinion {
+  padding: 10px;
+  background-color: #7A2A25;
+}
+
+.contenedor-opiniones1 {
+  background-color: #7A2A25;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contenedor-opiniones2 {
+  background-color: #7A2A25;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 996px) {
+  .contenedor-opiniones1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-opiniones2 {
+    background-color: #7A2A25;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.titulo {
+  font-size: 90px;
+}
+
+.tarjeta {
+  max-width: 320px;
+  min-width: 300px;
+  margin: 20px;
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #FA574B;
+  position: relative;
+}
+
+.img-tarjeta {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.tarjeta:hover .tarjeta-body {
+  right: 0;
+}
+
+.tarjeta-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: rgba(122, 43, 37, 0.2666666667);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
+}
+.tarjeta-body h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+.tarjeta-body .subtitulo {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+}
+.tarjeta-body .contenido {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+
+body {
+  background-color: #FA574B;
+}
+
+.form-control {
+  color: #FFFFFF; /* Color de letra */
+  background-color: #FA574B; /* Color de fondo del campo de entrada */
+}
+
+.btn-primary {
+  margin-top: 10px;
+  background-color: #7A2A25; /* Color de fondo del botón */
+  border-color: #7A2A25; /* Color del borde del botón */
+}
+
+.color {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  background-color: lightgray;
+}
+.footer h4 {
+  font-size: 23px;
+  font-weight: 900;
+}
+.footer div div ul {
+  list-style-type: none;
+  padding: 0rem;
+}
+
+@media screen and (max-width: 992px) {
+  /* la flechita hace referencia a todos los hijos directos */
+  .contenedor > * {
+    flex: 1;
+  }
+  .logo2 {
+    height: auto;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* index */
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  /* la flechita hace referencia a todos los hijos directos */
+  .contenedor > * {
+    flex: 1;
+  }
+  .logo2 {
+    height: auto;
+    width: 300px;
+  }
+  .videos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-opiniones {
+    display: flex;
+    flex-direction: column;
+  }
+  .opinion {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .opinion img {
+    width: auto;
+    height: 200px;
+  }
+  .portada {
+    display: flex;
+    flex-direction: column;
+  }
+  .portada img {
+    height: 450px;
+    width: auto;
+    display: block;
+  }
+}
+/*GIT
+📝 Comandos más utilizados para tener a mano:
+git init → Inicializar repositorio
+git add . → Agregar archivos a staging area / lista de espera
+git commit -m "comentario" → Crear una nueva versión de nuestro proyecto
+git status → Ver el estado de nuestro repositorio y sus archivos
+git branch → Ver nuestras ramas y la rama en la que estamos
+git checkout -b nombre-de-la-rama → Crear una nueva rama
+git checkout nombre-de-la-rama → Movernos hacia una rama
+git merge nombre-de-la-rama → Traer los cambios de una rama
+git push SUBIR ARCHIVOS A GITHUB
+*/
+
+/*# sourceMappingURL=estilo.css.map */

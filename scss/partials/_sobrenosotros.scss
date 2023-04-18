@@ -7,4 +7,17 @@
     padding: 15px;
     display: grid;
     gap: 10px;
+
+    h3{
+        font-weight: 800;
+        font-size: 25;
+    }
+}
+.articulo{
+    transition: 1s;
+}
+.articulo:hover{
+    color: black;
+    background-color: #7a2b255e;
+    font-size: 25px;
 }

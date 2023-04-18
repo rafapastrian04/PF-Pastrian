@@ -1,20 +1,16 @@
 .logo{
     height: 50px;
 }
-.color{
-    color: white;
-}
 .correccion{
     overflow-y: hidden;
 }
-.subtitulos{
-    margin: 10px;
-}
+
 .subtitulo{
+    margin: 10px;
     color: black;
-    font-size: 26px;
+    font-size: 40px;
     text-align: center;
-    text-decoration: solid;
+    font-weight: 500px;
 }
 .bg{
     background-color: $secondaryColor;
@@ -53,7 +49,8 @@ nav ul{
         position: absolute;
         max-width: 800px;
         top: 30px;
-        left: 50px;
+        left: 1rem;
+        right: 1rem;
         color: white;
         background-color: #7a2b25b4;
     }

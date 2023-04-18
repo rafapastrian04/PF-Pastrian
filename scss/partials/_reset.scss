@@ -1,9 +1,8 @@
 *{ /*el asterisco sirve para resetear lo que viene predeterminado en el navegador */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
-    font-family: $fontKanit;
+    font-family: "IBM Plex Sans", sans-serif;;
 
     &::selection {
         background-color: $mainColor;

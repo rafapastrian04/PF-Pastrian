@@ -9,7 +9,7 @@
     <meta name="description" content="Contactanos">
     <meta name="keywords" content="Suplementos, Nutricion, Gimnasio, Ofertas">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="../scss/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="fondo">
     <header>
@@ -49,77 +49,78 @@
                     </div>
             </div>
     </header>
-    <main class="subtitulo">
-        <form action="" method="post" class="formulario">
-            <div class="form">  
-                <h3 class="correccion color">Formulario de contacto:</h3>
+    <body>
+    <main>
+      <div class="container mt-5">
+        <h1 class="text-center mb-4">Formulario de Contacto</h1>
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="edad">Edad:</label>
+              <input type="number" class="form-control" id="edad" name="edad" min="0" required>
             </div>
-            <div class="form2">
-                <label  class="nombre color">Nombre:
-                    <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
-                </label>
-                <label class="apellido color">Apellido:
-                    <input type="text" name="apellido" placeholder="Apellido" required>
-                </label>
-                <label class="edad color">Edad:
-                    <input type="number" name="edad" placeholder="Edad" required>
-                </label>
-                <label class="correo color">Correo electrónico
-                    <input type="email" name="mail" placeholder="Mail" required>
-                </label>
-                <label class="motivo color">Motivo de su consulta:
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese aquí el motivo" required class="textarea"></textarea>
-                </label>
-                <div class="sexo color">
-                    <legend>Sexo:</legend>
-                    <label>Hombre
-                        <input type="radio" name="Género" value="hombre">
-                    </label>
-                    <label>Mujer
-                        <input type="radio" name="Género" value="mujer">
-                    </label>
-                    <label>No binario
-                        <input type="radio" name="Género" value="nobinario" checked>
-                    </label>
-                </div>
-                <label class="terminos color">Acepto términos y condiciones
-                    <input type="checkbox" name="acepto" value="si" required>
-                </label>
-                    <input type="reset" value="Reset" class="botones">
-                    <input type="submit" value="Enviar" class="botones2">
+            <div class="form-group col-md-6">
+              <label for="genero">Género:</label>
+              <select class="form-control" id="genero" name="genero" required>
+                <option value="" disabled selected>Seleccione un género</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+              </select>
             </div>
+          </div>
+          <div class="form-group">
+            <label for="motivo">Motivo de consulta:</label>
+            <textarea class="form-control" id="motivo" name="motivo" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
         </form>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Contacto</h4>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@nutritech.com</p>
+            <p>Dirección: 123 Calle Nutrición, Ciudad Nutricional</p>
+          </div>
+          <div class="col-sm-6">
+            <h4>Redes</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
+              <li><a href="https://www.facebook.com/">facebook</a></li>
+              <li><a href="https://twitter.com/home">twitter</a></li>
+              <li><a href="./contactos.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
-              <h4>Contacto</h4>
-              <p>Teléfono: (123) 456-7890</p>
-              <p>Email: info@nutritech.com</p>
-              <p>Dirección: 123 Calle Nutrición, Ciudad Nutricional</p>
-            </div>
-            <div class="col-sm-6">
-              <h4>Redes</h4>
-              <ul>
-                <li><a href="https://www.instagram.com/?hl=es-la">instagram</a></li>
-                <li><a href="https://www.facebook.com/">facebook</a></li>
-                <li><a href="https://twitter.com/home">twitter</a></li>
-                <li><a href="./contactos.html">Contacto</a></li>
-              </ul>
+            <div class="col-sm-12">
+              <p>&copy; 2023 NutriTech. Todos los derechos reservados.</p>
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <p>&copy; 2023 NutriTech. Todos los derechos reservados.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>

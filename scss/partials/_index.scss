@@ -51,11 +51,11 @@
     background-color: $mainColor;
 }
 
-@mixin tamanos{$ancho, $alto} {
+@mixin tamanos($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
 
 .logo2{
-    @include tamanos{auto, 250px}
+    @include tamanos(auto, 250px)
 }

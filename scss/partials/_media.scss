@@ -7,50 +7,6 @@
         height: auto;
         width: 300px;
     }
-    /*Footer*/
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-    /* la flechita hace referencia a todos los hijos directos */
-    .footer > * {
-        flex: 1;
-    }
-    .footer1{
-        padding: 10px;
-    }
-    .footer2{
-        padding: 10px;
-    }
-    .footer3{
-        padding: 10px;
-    }
-    .videos{
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor-opiniones{
-        display: flex;
-        flex-direction: column;
-    }
-    .opinion{
-        display: flex;
-        flex-direction: column;
-        padding: 5px;
-    }
-    .opinion img{
-        width: auto;
-        height: 400px;
-    }
-    .portada{
-        display: flex;
-        flex-direction: column;
-    }
-    .portada img{
-        height: 450px;
-        width: auto;
-        display: block;
-    }
 }
 @media screen and (max-width:576px) {
 /* index */
@@ -65,24 +21,6 @@
     .logo2 {
         height: auto;
         width: 300px;
-    }
-    /*Footer*/
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-    /* la flechita hace referencia a todos los hijos directos */
-    .footer > * {
-        flex: 1;
-    }
-    .footer1{
-        padding: 10px;
-    }
-    .footer2{
-        padding: 10px;
-    }
-    .footer3{
-        padding: 10px;
     }
     .videos{
         display: flex;
