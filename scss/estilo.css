@@ -441,3 +441,8 @@ git checkout nombre-de-la-rama → Movernos hacia una rama
 git merge nombre-de-la-rama → Traer los cambios de una rama
 git push SUBIR ARCHIVOS A GITHUB
 *//*# sourceMappingURL=estilo.css.map */
+
+
+/*SCSS
+sass --watch scss:css
+*/

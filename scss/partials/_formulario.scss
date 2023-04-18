@@ -7,10 +7,19 @@ body {
 }
 .btn-primary {
     margin-top: 10px;
+    font-size: 25px;
     background-color: #7A2A25; /* Color de fondo del botón */
     border-color: #7A2A25; /* Color del borde del botón */
 }
 .color{
     color: #FFFFFF;
     text-decoration: none;
+}
+.form-title{
+    font-size: 40px;
+    font-weight: 900;
+}
+.form-text{
+    font-size: 35px;
+    font-weight: 500;
 }
