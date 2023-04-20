@@ -2,17 +2,16 @@
     font-size: 30px;
     font-weight: 900;
 }
+
 .contenedor-opinion{
     padding: 10px;
     background-color: $mainColor;
 }
 .contenedor-opiniones1 {
-    background-color: $mainColor;
     display: flex;
     justify-content: space-around;
 }
 .contenedor-opiniones2 {
-    background-color: $mainColor;
     display: flex;
     justify-content: space-around;
 }
@@ -41,7 +40,7 @@
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
-    border: 8px solid #FA574B;
+    border: 8px solid rgba(255, 255, 255, 0.13);
     position: relative;
 }
 .img-tarjeta{
